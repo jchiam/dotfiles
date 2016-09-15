@@ -33,6 +33,13 @@ alias bstop-redis="brew services stop redis"
 alias bstart-psql="brew services start postgresql"
 alias bstop-psql="brew services stop postgresql"
 
+# PROJECT SPECIFIC #
+alias gorun="go build && ./ata-api"
+alias scm="$SC_MOBILE"
+alias atabase="$ATA_BASE"
+alias atago="$ATA_GO"
+# PROJECT SPECIFIC #
+
 ##### ALIASES #####
 
 ##### SETTINGS #####
