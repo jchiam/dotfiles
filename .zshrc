@@ -1,6 +1,6 @@
 ##### PATH #####
 
-export ZSH=/Users/jchiam/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export SC_MOBILE=$HOME/development/sc_mobile
