@@ -1,7 +1,8 @@
 ##### PATH #####
 
 export ZSH=$HOME/.oh-my-zsh
-export GOROOT=/usr/local/go
+export GOROOT=/usr/local/opt/go/libexec
+# export GOROOT=/usr/local/go # older installs of go uses this
 export GOPATH=$HOME/go
 export SC_MOBILE=$HOME/development/sc_mobile
 export ATA_BASE=$HOME/development/scm-atas
