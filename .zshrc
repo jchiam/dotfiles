@@ -7,6 +7,7 @@ export GOPATH=$HOME/go
 export SC_MOBILE=$HOME/development/sc_mobile
 export ATA_BASE=$HOME/development/scm-atas
 export ATA_GO=$GOPATH/src/github.estl.moe/SC-Mobile/atas.git/ata-api
+export ATA_APIGW=$GOPATH/src/github.estl.moe/SC-Mobile/atas.git/apigw
 export PATH=$PATH:$SC_MOBILE
 export PATH=$PATH:$ATA_BASE
 export PATH=$PATH:$ATA_GO
@@ -39,6 +40,7 @@ alias gorun="go build && ./ata-api"
 alias scm="$SC_MOBILE"
 alias atabase="$ATA_BASE"
 alias atago="$ATA_GO"
+alias ataapigw="$ATA_APIGW"
 # PROJECT SPECIFIC #
 
 ##### ALIASES #####
