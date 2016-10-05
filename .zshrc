@@ -1,8 +1,7 @@
 ##### PATH #####
 
-export ZSH=$HOME/.oh-my-zsh
-export GOROOT=/usr/local/opt/go/libexec
-# export GOROOT=/usr/local/go # older installs of go uses this
+export ZSH=/Users/jchiam/.oh-my-zsh
+export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export SC_MOBILE=$HOME/development/sc_mobile
 export ATA_BASE=$HOME/development/scm-atas
@@ -17,12 +16,13 @@ export PATH=$PATH:$GOPATH
 ##### PATH #####
 
 ##### THEME #####
-ZSH_THEME="avit"
+ZSH_THEME="agnoster"
 
 ##### ALIASES #####
 
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias refresh="source ~/.zshrc"
 alias ns="npm start"
 alias nrl="npm run lint"
 alias nrlt="npm run lint-test"
@@ -64,6 +64,8 @@ alias ataapigw="$ATA_APIGW"
 ##### PLUGINS #####
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ##### MISC #####
+DEFAULT_USER="jchiam"
 eval "$(rbenv init -)"
