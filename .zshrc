@@ -1,7 +1,8 @@
 ##### PATH #####
 
-export ZSH=/Users/jchiam/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 export GOROOT=/usr/local/go
+# export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/go
 export SC_MOBILE=$HOME/development/sc_mobile
 export ATA_BASE=$HOME/development/scm-atas
@@ -67,5 +68,5 @@ source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ##### MISC #####
-DEFAULT_USER="jchiam"
+DEFAULT_USER="jonathanchiam"
 eval "$(rbenv init -)"
