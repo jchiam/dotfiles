@@ -59,6 +59,11 @@ alias ataapigw="$ATA_APIGW"
 
 ##### SETTINGS #####
 
+##### ATOM CONFIGURATION #####
+atom_path="$HOME/Applications/Atom.app"
+alias at="open -a '$atom_path'"
+alias atom='at .'
+
 ##### PLUGINS #####
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
