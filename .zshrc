@@ -10,7 +10,7 @@ export ATA_BASE=$DEV/scm-atas
 export ATA_GO=$GOPATH/src/github.estl.moe/SC-Mobile/atas.git/ata-api
 export ATA_APIGW=$GOPATH/src/github.estl.moe/SC-Mobile/atas.git/apigw
 export QSE_BASE=$DEV/qse-prototype
-export QSE_GO=$GOPATH/src/github.estl.moe/QSE-Survey/qse-prototype/qse-api
+export QSE_GO=$GOPATH/src/github.estl.moe/QSE-Survey/qse-prototype.git/qse-api
 export PATH=$PATH:$GOROOT
 export PATH=$PATH:$GOPATH
 
