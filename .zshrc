@@ -38,7 +38,7 @@ alias bstop-psql="brew services stop postgresql"
 
 # PROJECT SPECIFIC #
 alias dev="$DEV"
-alias gorun="go build && ./ata-api"
+alias gorun="go build && ./${PWD##*/}"
 alias scm="$SC_MOBILE"
 alias atabase="$ATA_BASE"
 alias atago="$ATA_GO"
