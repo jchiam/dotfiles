@@ -1,14 +1,18 @@
 ##### PATH #####
 
-export ZSH=/Users/jchiam/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
+# export GOROOT=/usr/local/go
+export GOROOT=/usr/local/opt/go/libexec
 export DEV=$HOME/development
-export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
-export SC_MOBILE=$HOME/development/sc_mobile
-export ATA_BASE=$HOME/development/scm-atas
+export SC_MOBILE=$DEV/sc_mobile
+export ATA_BASE=$DEV/scm-atas
 export ATA_GO=$GOPATH/src/github.estl.moe/SC-Mobile/atas.git/ata-api
 export ATA_APIGW=$GOPATH/src/github.estl.moe/SC-Mobile/atas.git/apigw
-export PATH=$PATH:$GOROOT:$GOPATH
+export QSE_BASE=$DEV/qse-prototype
+export QSE_GO=$GOPATH/src/github.estl.moe/QSE-Survey/qse-prototype/qse-api
+export PATH=$PATH:$GOROOT
+export PATH=$PATH:$GOPATH
 
 ##### PATH #####
 
@@ -39,6 +43,8 @@ alias scm="$SC_MOBILE"
 alias atabase="$ATA_BASE"
 alias atago="$ATA_GO"
 alias ataapigw="$ATA_APIGW"
+alias qsebase="$QSE_BASE"
+alias qsego="$QSE_GO"
 # PROJECT SPECIFIC #
 
 ##### ALIASES #####
