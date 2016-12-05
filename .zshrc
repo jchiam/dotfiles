@@ -39,6 +39,8 @@ alias bstop-psql="brew services stop postgresql"
 # PROJECT SPECIFIC #
 alias dev="$DEV"
 alias gorun="go build && ./${PWD##*/}"
+alias prun="mix phoenix.server"
+alias goose="$GOPATH/bin/goose"
 alias scm="$SC_MOBILE"
 alias atabase="$ATA_BASE"
 alias atago="$ATA_GO"
@@ -76,6 +78,5 @@ source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ##### MISC #####
-DEFAULT_USER="jchiam"
+DEFAULT_USER="$USER"
 eval "$(rbenv init -)"
-
