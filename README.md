@@ -8,6 +8,5 @@
   - .vimrc
   - .bashrc
   - .zshrc
-  - .oh-my-zsh
 1. Create symlinks to dotfiles in `~/dotfiles` from `$HOME`
 
