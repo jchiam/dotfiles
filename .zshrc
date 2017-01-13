@@ -33,8 +33,9 @@ alias bstart-redis="brew services start redis"
 alias bstop-redis="brew services stop redis"
 alias bstart-psql="brew services start postgresql"
 alias bstop-psql="brew services stop postgresql"
-alias dockerrc="docker rm $(docker ps -a -q)"
-alias dockerri="docker rmi $(docker images --filter \"dangling=true\" -q --no-trunc)"
+alias dockerrc='docker rm $(docker ps -a -q)'
+alias dockerri='docker rmi $(docker images --filter \"dangling=true\" -q --no-trunc)'
+alias dockerrv='docker volume rm $(docker volume ls -qf dangling=true)'
 
 # PROJECT SPECIFIC #
 alias dev="$DEV"
