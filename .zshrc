@@ -7,8 +7,8 @@ export DEV=$HOME/development
 export GOPATH=$HOME/go
 export ATA_BASE=$DEV/scm-atas
 export ATA_GO=$GOPATH/src/github.estl.moe/SC-Mobile/ata-backend.git/cmd/api
-export QSE_BASE=$DEV/qse-prototype
-export QSE_GO=$GOPATH/src/github.estl.moe/QSE-Survey/qse-prototype.git/qse-api
+export QSE_BASE=$DEV/qse
+export QSE_GO=$GOPATH/src/github.estl.moe/QSE/qse-backend.git
 export PATH=$PATH:$GOROOT
 export PATH=$PATH:$GOPATH
 
