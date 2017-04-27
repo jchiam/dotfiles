@@ -5,10 +5,7 @@ export ZSH=~/.oh-my-zsh
 export GOROOT=/usr/local/opt/go/libexec
 export DEV=$HOME/development
 export GOPATH=$HOME/go
-export ATA_BASE=$DEV/ata-frontend
-export ATA_GO=$GOPATH/src/github.estl.moe/SC-Mobile/ata-backend.git/cmd/api
-export QSE_BASE=$DEV/qse-frontend
-export QSE_GO=$GOPATH/src/github.estl.moe/QSE/qse-backend.git
+export QSE_BASE=$DEV/qse/frontend
 export PATH=$PATH:$GOROOT
 export PATH=$PATH:$GOPATH
 
@@ -26,6 +23,8 @@ alias ns="npm start"
 alias nrl="npm run lint"
 alias nrlt="npm run lint-test"
 alias nrt="npm run test"
+alias ys="yarn start"
+alias yl="yarn lint"
 alias redis-start="redis-server /usr/local/etc/redis.conf"
 alias psql-start="postgres -D /usr/local/var/postgres"
 alias brewsvs="brew services list"
@@ -46,12 +45,7 @@ alias godep="$GOPATH/bin/godep"
 alias goose="$GOPATH/bin/goose"
 alias gu="$GOPATH/bin/goose up"
 alias gdo="$GOPATH/bin/goose down"
-alias scm="$SC_MOBILE"
-alias atabase="$ATA_BASE"
-alias atago="$ATA_GO"
-alias ataapigw="$ATA_APIGW"
 alias qsebase="$QSE_BASE"
-alias qsego="$QSE_GO"
 # PROJECT SPECIFIC #
 
 ##### ALIASES #####
