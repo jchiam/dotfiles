@@ -79,3 +79,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ##### MISC #####
 DEFAULT_USER="$USER"
 eval "$(rbenv init -)"
+
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
