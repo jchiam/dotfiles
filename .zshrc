@@ -6,6 +6,7 @@ export GOROOT=/usr/local/opt/go/libexec
 export DEV=$HOME/development
 export GOPATH=$HOME/go
 export QSE_BASE=$DEV/qse/frontend
+export QSE_GO=$GOPATH/src/gitlab.estl.moe/qse/backend.git
 export PATH=$PATH:$GOROOT
 export PATH=$PATH:$GOPATH
 
@@ -25,13 +26,7 @@ alias nrlt="npm run lint-test"
 alias nrt="npm run test"
 alias ys="yarn start"
 alias yl="yarn lint"
-alias redis-start="redis-server /usr/local/etc/redis.conf"
-alias psql-start="postgres -D /usr/local/var/postgres"
-alias brewsvs="brew services list"
-alias bstart-redis="brew services start redis"
-alias bstop-redis="brew services stop redis"
-alias bstart-psql="brew services start postgresql"
-alias bstop-psql="brew services stop postgresql"
+alias brewsvs="brew services"
 alias dockerrc='docker container prune'
 alias dockerri='docker image prune'
 alias dockerrv='docker volume prune'
@@ -42,10 +37,12 @@ alias gorun="go build && ./${PWD##*/}"
 alias gtc="go test -cover"
 alias prun="mix phoenix.server"
 alias godep="$GOPATH/bin/godep"
+alias sql-migrate="$GOPATH/bin/sql-migrate"
 alias goose="$GOPATH/bin/goose"
 alias gu="$GOPATH/bin/goose up"
 alias gdo="$GOPATH/bin/goose down"
 alias qsebase="$QSE_BASE"
+alias qsego="$QSE_GO"
 # PROJECT SPECIFIC #
 
 ##### ALIASES #####
@@ -82,4 +79,6 @@ eval "$(rbenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
+
+export DATABASE_USER=postgres
 
