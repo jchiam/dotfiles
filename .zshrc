@@ -6,7 +6,7 @@ export GOROOT=/usr/local/opt/go/libexec
 export DEV=$HOME/development
 export GOPATH=$HOME/go
 export QSE_BASE=$DEV/qse/frontend
-export QSE_GO=$GOPATH/src/gitlab.estl.moe/qse/backend.git
+export QSE_GO=$GOPATH/src/github.estl.moe/qse/backend.git
 export PATH=$PATH:$GOROOT
 export PATH=$PATH:$GOPATH/bin
 
