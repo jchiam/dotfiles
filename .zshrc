@@ -8,7 +8,7 @@ export GOPATH=$HOME/go
 export QSE_BASE=$DEV/qse/frontend
 export QSE_GO=$GOPATH/src/gitlab.estl.moe/qse/backend.git
 export PATH=$PATH:$GOROOT
-export PATH=$PATH:$GOPATH
+export PATH=$PATH:$GOPATH/bin
 
 ##### PATH #####
 
@@ -36,11 +36,6 @@ alias dev="$DEV"
 alias gorun="go build && ./${PWD##*/}"
 alias gtc="go test -cover"
 alias prun="mix phoenix.server"
-alias godep="$GOPATH/bin/godep"
-alias sql-migrate="$GOPATH/bin/sql-migrate"
-alias goose="$GOPATH/bin/goose"
-alias gu="$GOPATH/bin/goose up"
-alias gdo="$GOPATH/bin/goose down"
 alias qsebase="$QSE_BASE"
 alias qsego="$QSE_GO"
 # PROJECT SPECIFIC #
