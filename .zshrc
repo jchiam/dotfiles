@@ -73,8 +73,8 @@ DEFAULT_USER="$USER"
 eval "$(rbenv init -)"
 
 ## nvm
-# export NVM_DIR="$HOME/.nvm"
-# . "/usr/local/opt/nvm/nvm.sh"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 ## postgres
 export DATABASE_USER=postgres
