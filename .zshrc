@@ -75,6 +75,7 @@ eval "$(rbenv init -)"
 ## nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+# nvm use --delete-prefix v9.11.1
 
 ## postgres
 export DATABASE_USER=postgres
