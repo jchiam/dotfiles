@@ -6,7 +6,7 @@ export GOROOT=/usr/local/opt/go/libexec
 export DEV=$HOME/development
 export GOPATH=$HOME/go
 export QSE_BASE=$DEV/qse/frontend
-export QSE_GO=$GOPATH/src/github.estl.moe/qse/backend.git
+export QSE_GO=$GOPATH/src/github.estl.moe/qse/backend
 export PATH=$PATH:$GOROOT
 export PATH=$PATH:$GOPATH/bin
 
@@ -33,8 +33,6 @@ alias dockerrv='docker volume prune'
 
 # PROJECT SPECIFIC #
 alias dev="$DEV"
-alias gorun="go build && ./${PWD##*/}"
-alias gtc="go test -cover"
 alias prun="mix phoenix.server"
 alias qsebase="$QSE_BASE"
 alias qsego="$QSE_GO"
