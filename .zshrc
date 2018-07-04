@@ -36,6 +36,8 @@ alias dev="$DEV"
 alias prun="mix phoenix.server"
 alias qsebase="$QSE_BASE"
 alias qsego="$QSE_GO"
+alias psqlqse="psql -d postgresql://postgres@localhost:5432/qse"
+alias killpsql="~/dotfiles/scripts/kill_psql.sh"
 # PROJECT SPECIFIC #
 
 ##### ALIASES #####
