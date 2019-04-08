@@ -5,10 +5,15 @@ export ZSH=~/.oh-my-zsh
 export GOROOT=/usr/local/opt/go/libexec
 export DEV=$HOME/development
 export GOPATH=$HOME/go
-export QSE_BASE=$DEV/qse/frontend
+export QSE_FRONTEND=$DEV/qse/frontend
 export QSE_GO=$GOPATH/src/github.estl.moe/qse/backend
+export SCS_FRONTEND=$DEV/scs/frontend
+export SCS_BACKEND=$DEV/scs/backend
+export SCS_MOCK=$GOPATH/src/github.estl.moe/survey/mock
+export SCS_DOCKER=$DEV/scs/docker-survey
 export PATH=$PATH:$GOROOT
 export PATH=$PATH:$GOPATH/bin
+export PATH="/usr/local/sbin:$PATH"
 
 ##### PATH #####
 
@@ -37,6 +42,12 @@ alias prun="mix phoenix.server"
 alias qsebase="$QSE_BASE"
 alias qsego="$QSE_GO"
 alias psqlqse="psql -d postgresql://postgres@localhost:5432/qse"
+alias scsf="$SCS_FRONTEND"
+alias scsb="$SCS_BACKEND"
+alias scsmock="$SCS_MOCK"
+alias scsd="$SCS_DOCKER"
+alias scsdbreset="$SCS_GO/db/reset.sh"
+alias psqlscs="psql -d postgresql://postgres@localhost:5432/survey"
 alias killpsql="~/dotfiles/scripts/kill_psql.sh"
 # PROJECT SPECIFIC #
 
@@ -75,8 +86,9 @@ eval "$(rbenv init -)"
 ## nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-# nvm use --delete-prefix v9.11.1
 
 ## postgres
 export DATABASE_USER=postgres
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
