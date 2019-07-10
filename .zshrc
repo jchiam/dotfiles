@@ -85,3 +85,10 @@ export DATABASE_USER=postgres
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+## graphviz
+export PATH="/usr/local/opt/graphviz/bin:$PATH"
+export SCHEMA_CRAWLER_PATH=~/_schemacrawler
+
+## direnv
+eval "$(direnv hook zsh)"
+
