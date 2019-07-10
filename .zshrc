@@ -45,7 +45,6 @@ alias scsf="$SCS_FRONTEND"
 alias scsb="$SCS_BACKEND"
 alias scsm="$SCS_MOCK"
 alias scsd="$SCS_DOCKER"
-alias scsdbreset="$SCS_GO/db/reset.sh"
 alias psqlscs="psql -d postgresql://postgres@localhost:5432/survey"
 alias killpsql="~/dotfiles/scripts/kill_psql.sh"
 # PROJECT SPECIFIC #
@@ -67,11 +66,6 @@ alias killpsql="~/dotfiles/scripts/kill_psql.sh"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 ##### SETTINGS #####
-
-##### ATOM CONFIGURATION #####
-atom_path="$HOME/Applications/Atom.app"
-alias at="open -a '$atom_path'"
-alias atom='at .'
 
 ##### PLUGINS #####
 plugins=(git)
