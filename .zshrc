@@ -68,7 +68,8 @@ alias killpsql="~/dotfiles/scripts/kill_psql.sh"
 ##### SETTINGS #####
 
 ##### PLUGINS #####
-plugins=(git)
+# zsh-nvm plugin:  https://github.com/lukechilds/zsh-nvm#as-an-oh-my-zsh-custom-plugin
+plugins=(git zsh-nvm)
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -76,14 +77,8 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 DEFAULT_USER="$USER"
 eval "$(rbenv init -)"
 
-## nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
 ## postgres
 export DATABASE_USER=postgres
-
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 ## graphviz
 export PATH="/usr/local/opt/graphviz/bin:$PATH"
