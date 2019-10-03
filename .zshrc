@@ -29,9 +29,6 @@ alias nrt="npm run test"
 alias nrb="npm run build"
 alias gupgrade="go get -u -m && go mod tidy"
 alias brewsvs="brew services"
-alias dockerrc='docker container prune'
-alias dockerri='docker image prune'
-alias dockerrv='docker volume prune'
 
 # PROJECT SPECIFIC #
 alias dev="$DEV"
