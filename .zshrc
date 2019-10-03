@@ -1,8 +1,6 @@
 ##### PATH #####
 
 export ZSH=~/.oh-my-zsh
-# export GOROOT=/usr/local/go
-export GOROOT=/usr/local/opt/go/libexec
 export DEV=$HOME/development
 export GOPATH=$HOME/go
 export QSE_FRONTEND=$DEV/qse/frontend
