@@ -74,6 +74,9 @@ source $ZSH/oh-my-zsh.sh
 
 ##### MISC #####
 
+## force myself as system's default user (removes machine name)
+DEFAULT_USER="$(whoami)"
+
 ## postgres
 export DATABASE_USER=postgres
 
