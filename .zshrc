@@ -64,9 +64,13 @@ alias killpsql="~/dotfiles/scripts/kill_psql.sh"
 
 ##### PLUGINS #####
 # zsh-nvm plugin:  https://github.com/lukechilds/zsh-nvm#as-an-oh-my-zsh-custom-plugin
-plugins=(git zsh-nvm)
+plugins=(
+  git
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+  zsh-nvm
+)
 source $ZSH/oh-my-zsh.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ##### MISC #####
 
