@@ -1,7 +1,7 @@
 ##### PATH #####
 
 export ZSH=~/.oh-my-zsh
-export DEV=$HOME/development
+export DEV=$HOME/Development
 export GOPATH=$HOME/go
 export QSE_FRONTEND=$DEV/surveys/qse-frontend
 export SSES_FRONTEND=$DEV/surveys/sses-frontend
