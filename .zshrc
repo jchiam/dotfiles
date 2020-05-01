@@ -3,13 +3,10 @@
 export ZSH=~/.oh-my-zsh
 export DEV=$HOME/development
 export GOPATH=$HOME/go
-export QSE_FRONTEND=$DEV/qse/frontend
-export QSE_BACKEND=$DEV/qse/backend
-export QSE_DOCKER=$DEV/qse/docker-qse
-export SCS_FRONTEND=$DEV/scs/frontend
-export SCS_BACKEND=$DEV/scs/backend
-export SCS_MOCK=$DEV/scs/mock
-export SCS_DOCKER=$DEV/scs/docker-survey
+export QSE_FRONTEND=$DEV/surveys/qse-frontend
+export SSES_FRONTEND=$DEV/surveys/sses-frontend
+export SURVEY_BACKEND=$DEV/surveys/backend
+export SURVEY_DOCKER=$DEV/surveys/docker-survey
 export PATH=$PATH:$GOROOT
 export PATH=$PATH:$GOPATH/bin
 export PATH="/usr/local/sbin:$PATH"
@@ -33,16 +30,13 @@ alias brewsvs="brew services"
 
 # PROJECT SPECIFIC #
 alias dev="$DEV"
-alias prun="mix phoenix.server"
 alias qsef="$QSE_FRONTEND"
-alias qseb="$QSE_BACKEND"
-alias qsed="$QSE_DOCKER"
+alias scsf="$SSES_FRONTEND"
+alias sb="$SURVEY_BACKEND"
+alias sd="$SURVEY_DOCKER"
 alias psqlqse="psql -d postgresql://postgres@localhost:5432/qse"
-alias scsf="$SCS_FRONTEND"
-alias scsb="$SCS_BACKEND"
-alias scsm="$SCS_MOCK"
-alias scsd="$SCS_DOCKER"
-alias psqlscs="psql -d postgresql://postgres@localhost:5432/survey"
+alias psqlscs="psql -d postgresql://postgres@localhost:5432/sses"
+alias psqlfeed="psql -d postgresql://postgres@localhost:5432/feedback"
 alias killpsql="~/dotfiles/scripts/kill_psql.sh"
 # PROJECT SPECIFIC #
 
