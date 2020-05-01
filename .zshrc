@@ -83,3 +83,5 @@ export SCHEMA_CRAWLER_PATH=~/_schemacrawler
 ## direnv
 eval "$(direnv hook zsh)"
 
+## tuning
+ulimit -n 1000000 1000000
