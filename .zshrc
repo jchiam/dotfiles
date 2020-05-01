@@ -28,7 +28,7 @@ alias ns="npm start"
 alias nrl="npm run lint"
 alias nrt="npm run test"
 alias nrb="npm run build"
-alias gupgrade="go get -u -m && go mod tidy"
+alias gupgrade="go get -u && go mod tidy"
 alias brewsvs="brew services"
 
 # PROJECT SPECIFIC #
