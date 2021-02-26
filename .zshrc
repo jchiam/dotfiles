@@ -66,6 +66,7 @@ alias killpsql="~/dotfiles/scripts/kill_psql.sh"
 ##### SETTINGS #####
 
 ##### PLUGINS #####
+
 # zsh-nvm plugin:  https://github.com/lukechilds/zsh-nvm#as-an-oh-my-zsh-custom-plugin
 plugins=(
   git
@@ -74,6 +75,8 @@ plugins=(
   zsh-nvm
 )
 source $ZSH/oh-my-zsh.sh
+
+##### PLUGINS #####
 
 ##### MISC #####
 
