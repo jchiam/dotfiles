@@ -7,6 +7,9 @@ export QSE_FRONTEND=$DEV/surveys/qse-frontend
 export SSES_FRONTEND=$DEV/surveys/sses-frontend
 export SURVEY_BACKEND=$DEV/surveys/backend
 export SURVEY_DOCKER=$DEV/surveys/docker-survey
+export OP_FRONTEND=$DEV/oneplacement/frontend
+export OP_BACKEND=$DEV/oneplacement/backend
+export OP_DOCKER=$DEV/oneplacement/docker-op
 export PATH=$PATH:$GOROOT
 export PATH=$PATH:$GOPATH/bin
 export PATH="/usr/local/sbin:$PATH"
@@ -35,9 +38,12 @@ alias qsef="$QSE_FRONTEND"
 alias scsf="$SSES_FRONTEND"
 alias sb="$SURVEY_BACKEND"
 alias sd="$SURVEY_DOCKER"
+alias opf="$OP_FRONTEND"
+alias opb="$OP_BACKEND"
+alias opd="$OP_DOCKER"
 alias psqlqse="psql -d postgresql://postgres@localhost:5432/qse"
 alias psqlscs="psql -d postgresql://postgres@localhost:5432/sses"
-alias psqlfeed="psql -d postgresql://postgres@localhost:5432/feedback"
+alias psqlop="psql -d postgresql://postgres@localhost:5432/op"
 alias killpsql="~/dotfiles/scripts/kill_psql.sh"
 # PROJECT SPECIFIC #
 
