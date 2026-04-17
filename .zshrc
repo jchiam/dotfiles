@@ -3,16 +3,9 @@
 export ZSH=~/.oh-my-zsh
 export DEV=$HOME/Development
 export GOPATH=$HOME/go
-export QSE_FRONTEND=$DEV/surveys/qse-frontend
-export SSES_FRONTEND=$DEV/surveys/sses-frontend
-export SURVEY_BACKEND=$DEV/surveys/backend
-export SURVEY_DOCKER=$DEV/surveys/docker-survey
-export OP_FRONTEND=$DEV/oneplacement/frontend
-export OP_BACKEND=$DEV/oneplacement/backend
-export OP_DOCKER=$DEV/oneplacement/docker-op
 export PATH=$PATH:$GOROOT
 export PATH=$PATH:$GOPATH/bin
-export PATH="/usr/local/sbin:$PATH"
+export PATH=$PATH:/opt/homebrew/bin
 
 ##### PATH #####
 
@@ -24,26 +17,18 @@ ZSH_THEME="agnoster"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias refresh="source ~/.zshrc"
-alias vpn="sudo openvpn --config ~/Development/client.ovpn --auth-user-pass --auth-retry interact"
 alias ns="npm start"
 alias nrl="npm run lint"
 alias nrt="npm run test"
 alias nrb="npm run build"
-alias gupgrade="go get -u && go mod tidy"
+alias brew="arch -arm64 brew"
 alias brewsvs="brew services"
 
 # PROJECT SPECIFIC #
 alias dev="$DEV"
-alias qsef="$QSE_FRONTEND"
-alias scsf="$SSES_FRONTEND"
-alias sb="$SURVEY_BACKEND"
-alias sd="$SURVEY_DOCKER"
-alias opf="$OP_FRONTEND"
-alias opb="$OP_BACKEND"
-alias opd="$OP_DOCKER"
-alias psqlqse="psql -d postgresql://postgres@localhost:5432/qse"
-alias psqlscs="psql -d postgresql://postgres@localhost:5432/sses"
 alias psqlop="psql -d postgresql://postgres@localhost:5432/op"
+alias psqloptest="psql -d postgresql://postgres@localhost:5432/op_test"
+alias psqlopdis="psql -d postgresql://postgres@localhost:5432/op_dis"
 alias killpsql="~/dotfiles/scripts/kill_psql.sh"
 # PROJECT SPECIFIC #
 
@@ -54,7 +39,7 @@ alias killpsql="~/dotfiles/scripts/kill_psql.sh"
 # CASE_SENSITIVE="true"
 # HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_UPDATE="true"
-# export UPDATE_ZSH_DAYS=13
+# export UPDATE_ZSH_DAYS=7
 # DISABLE_LS_COLORS="true"
 # DISABLE_AUTO_TITLE="true"
 # ENABLE_CORRECTION="true"
@@ -83,6 +68,9 @@ source $ZSH/oh-my-zsh.sh
 ## force myself as system's default user (removes machine name)
 DEFAULT_USER="$(whoami)"
 
+## ssh-agent
+eval "$(ssh-agent)"
+
 ## postgres
 export DATABASE_USER=postgres
 
@@ -92,3 +80,34 @@ export SCHEMA_CRAWLER_PATH=~/_schemacrawler
 
 ## direnv
 eval "$(direnv hook zsh)"
+
+## docker
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
+## Cloudflare Certs (SEED)
+export NODE_EXTRA_CA_CERTS="${HOME}/.config/.cloudflare/Cloudflare_CA.pem"
+
+[[ -s "/Users/jchiam/.gvm/scripts/gvm" ]] && source "/Users/jchiam/.gvm/scripts/gvm"
+
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
+
+export GPG_TTY=$(tty)
+
+# Added by Antigravity
+export PATH="/Users/jchiam/.antigravity/antigravity/bin:$PATH"
+
+
+export PATH="$HOME/.local/bin:$PATH"
+export SSL_CERT_FILE="${HOME}/.config/cloudflare/combined-bundle.pem"
+export NODE_EXTRA_CA_CERTS="${HOME}/.config/cloudflare/Cloudflare_CA.pem"
+export REQUESTS_CA_BUNDLE="${HOME}/.config/cloudflare/combined-bundle.pem"
+export AWS_CA_BUNDLE="${HOME}/.config/cloudflare/combined-bundle.pem"
+
+# Cloudflare WARP CA Certificate Configuration
+# Added by GT Developer CLI
+export NODE_EXTRA_CA_CERTS="/Users/jchiam/.config/cloudflare/Cloudflare_CA.pem"
+export SSL_CERT_FILE="/Users/jchiam/.config/cloudflare/combined-bundle.pem"
+export REQUESTS_CA_BUNDLE="/Users/jchiam/.config/cloudflare/combined-bundle.pem"
+export AWS_CA_BUNDLE="/Users/jchiam/.config/cloudflare/combined-bundle.pem"
+# End Cloudflare WARP CA Certificate Configuration
