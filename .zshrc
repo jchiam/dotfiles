@@ -2,9 +2,6 @@
 
 export ZSH=~/.oh-my-zsh
 export DEV=$HOME/Development
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT
-export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/opt/homebrew/bin
 
 ##### PATH #####
@@ -26,9 +23,6 @@ alias brewsvs="brew services"
 
 # PROJECT SPECIFIC #
 alias dev="$DEV"
-alias psqlop="psql -d postgresql://postgres@localhost:5432/op"
-alias psqloptest="psql -d postgresql://postgres@localhost:5432/op_test"
-alias psqlopdis="psql -d postgresql://postgres@localhost:5432/op_dis"
 alias killpsql="~/dotfiles/scripts/kill_psql.sh"
 # PROJECT SPECIFIC #
 
@@ -74,10 +68,6 @@ eval "$(ssh-agent)"
 ## postgres
 export DATABASE_USER=postgres
 
-## graphviz
-export PATH="/usr/local/opt/graphviz/bin:$PATH"
-export SCHEMA_CRAWLER_PATH=~/_schemacrawler
-
 ## direnv
 eval "$(direnv hook zsh)"
 
@@ -93,9 +83,6 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 
 export GPG_TTY=$(tty)
-
-# Added by Antigravity
-export PATH="/Users/jchiam/.antigravity/antigravity/bin:$PATH"
 
 
 export PATH="$HOME/.local/bin:$PATH"
