@@ -1,17 +1,33 @@
 " Theme
 colorscheme koehler
+syntax on
 
-" Set line number
+" Line numbers
 set number
+set relativenumber
 
-" Set auto indentation
+" Indentation
 set autoindent
 set smartindent
-
-" Use spaces instead of tab
 set expandtab
-
-" Set tab to 2 spaces
 set shiftwidth=2
 set tabstop=2
 
+" Search
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Editor behaviour
+set nowrap
+set scrolloff=8
+set backspace=indent,eol,start
+set noswapfile
+set encoding=utf-8
+
+" UI
+set ruler
+set showcmd
+set wildmenu
+set laststatus=2
